@@ -367,9 +367,14 @@ ul li {
 
 .container-grid {
   display: grid;
-  grid-template-columns: auto 1200px auto;
+  grid-template-columns: auto 95% auto;
   grid-template-areas: ". grid-content .";
   min-height: 100vh;
+}
+@media (min-width: 1200px) {
+  .container-grid {
+    grid-template-columns: auto 1200px auto;
+  }
 }
 .container-grid .container-grid-item {
   grid-area: grid-content;
@@ -434,14 +439,22 @@ textarea {
   background-color: #003049;
   min-height: 100vh;
 }
+#section-1 .container-grid-item {
+  padding-top: 100vh;
+}
 #section-1 .container-grid-item .box {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 30vh;
+  width: 100px;
+  height: 100px;
   display: grid;
   place-items: center;
   color: #fff;
   font-size: 3.125rem;
+}
+@media (min-width: 1200px) {
+  #section-1 .container-grid-item .box {
+    width: 300px;
+    height: 300px;
+  }
 }
 #section-1 .container-grid-item #red-box {
   background-color: #d62828;

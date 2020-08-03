@@ -16,9 +16,13 @@ ul{
 
 .container-grid{
     display: grid;
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 95% auto;
     grid-template-areas: ". grid-content .";
     min-height: 100vh;
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
 
     .container-grid-item{
         grid-area: grid-content;
