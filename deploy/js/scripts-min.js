@@ -1,1 +1,1 @@
-gsap.registerPlugin(ScrollTrigger),gsap.to("#yellow-box",{duration:1,x:400,rotation:360,scrollTrigger:{trigger:"#yellow-box",start:"top 60%",markers:!0,scrub:1,pin:!0,toggleActions:"restart none none none"}});
+gsap.registerPlugin(ScrollTrigger),gsap.to("#yellow-box",{duration:1,x:400,rotation:360,scrollTrigger:{trigger:"#yellow-box",toggleActions:"restart none none none"}});
